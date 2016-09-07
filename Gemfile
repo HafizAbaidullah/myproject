@@ -12,7 +12,7 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
+ gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -27,6 +27,14 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+gem 'activerecord-tableless'
+gem 'compass-rails', '~> 2.0.alpha.0'
+gem 'figaro'
+gem 'gibbon'
+gem 'google_drive'
+gem 'high_voltage'
+gem 'simple_form'
+gem 'zurb-foundation'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
@@ -35,6 +43,9 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
+  gem 'better_errors'
+gem 'quiet_assets'
+gem 'rails_layout'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 end
